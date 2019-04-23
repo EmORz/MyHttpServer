@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StartUp.Contract;
+using System;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
@@ -34,6 +35,7 @@ namespace StartUp
                 var resposeText = File.ReadAllText("index.html");
                 var responseBytes = Encoding.UTF8.GetBytes(
                     "HTTP/1.0 200 OK" + Environment.NewLine+
+                    //"Content-Disposition: attachment; filename=index.exe "+Environment.NewLine+
                                       //+ "Content-Type: text/plain" + Environment.NewLine +
                                       "Content-Length" + resposeText.Length + Environment.NewLine +Environment.NewLine +
                                       resposeText

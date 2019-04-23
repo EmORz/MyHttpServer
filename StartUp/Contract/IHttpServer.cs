@@ -1,4 +1,4 @@
-﻿namespace StartUp
+﻿namespace StartUp.Contract
 {
     public interface IHttpServer
     {

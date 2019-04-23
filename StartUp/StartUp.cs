@@ -1,4 +1,4 @@
-﻿using System;
+﻿using StartUp.Contract;
 
 namespace StartUp
 {
